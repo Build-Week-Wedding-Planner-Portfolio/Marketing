@@ -281,6 +281,10 @@ section .person .container p {
   font-size: 2rem;
   font-family: 'PT Mono', monospace;
 }
+section .person .container p {
+  font-size: 2rem;
+  font-family: 'PT Mono', monospace;
+}
 @media (max-width: 500px) {
   section .person {
     width: 95%;
