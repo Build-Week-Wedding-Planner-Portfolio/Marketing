@@ -166,27 +166,19 @@ img {
   display: none;
 }
 .homepage .home-content .featured .cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.homepage .home-content .featured .cards .wedding-card {
-  flex: 0 47.5%;
-}
-.homepage .home-content .featured .cards .wedding-card .img-card {
-  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
 }
 .homepage .home-content .instagram .ig-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.homepage .home-content .instagram .ig-wrapper .ig {
-  flex: 0 49.5%;
-  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
 }
 @media (min-width:500px) {
-  .homepage .home-content .instagram .ig-wrapper .ig {
-    flex: 0 33%;
+  .homepage .home-content .instagram .ig-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
