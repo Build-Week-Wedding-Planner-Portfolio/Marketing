@@ -1,1 +1,85 @@
+img { width: 100%; }
+
+.flexbox(){
+  display: flex;
+  flex-flow: row wrap;
+}
+
 // Homepage Styles
+.homepage {
+  & > * {
+    border:1px solid red;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    height: 4rem;
+    background-color: grey;
+  } // .nav-wrapper
+
+  .home-header {
+
+    .homepage-hero {
+      width: 100%;
+      height: 80vh;
+      background-image: url('../img/homepage-hero.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  } // .home-header
+
+  .home-content {
+
+    .highlight {
+
+      .img-highlight {
+        height: 30rem;
+        background-image: url('https://via.placeholder.com/500');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid blue;
+      } // .img-highlight
+    } // .highlight
+
+
+    .featured {
+
+      .cards {
+        .flexbox();
+        .wedding-card {
+          flex: 1 50%;
+
+          .img-card {
+            height: 30rem;
+            background-image: url('https://via.placeholder.com/500');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px solid blue;
+          } // .img-card
+        } // .wedding-card
+      } // .cards
+    } // .featured
+
+    .instagram {
+      .flexbox();
+
+      .ig {
+        flex: 1 auto;
+        height: 10rem;
+        background-image: url('https://via.placeholder.com/500');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid blue;
+      }
+    } // .instagram
+
+    .home-footer {
+
+    } // .home-footer
+  } // .home-content
+
+} // .homepage
