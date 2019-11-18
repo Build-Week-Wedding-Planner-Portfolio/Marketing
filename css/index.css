@@ -1,9 +1,30 @@
 @font-face {
-  font-family: 'Great Vibes';
+  font-family: 'Alata';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN9XFiaE.ttf) format('truetype');
+  src: local('Alata Regular'), local('Alata-Regular'), url(https://fonts.gstatic.com/s/alata/v1/PbytFmztEwbIoce9zqM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IM Fell Great Primer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('IM FELL Great Primer Roman'), local('IM_FELL_Great_Primer_Roman'), url(https://fonts.gstatic.com/s/imfellgreatprimer/v9/bx6aNwSJtayYxOkbYFsT6hMsLzX7u85rJrrQtj4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Mono'), local('PTMono-Regular'), url(https://fonts.gstatic.com/s/ptmono/v7/9oRONYoBnWILk-9AnC8zNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Share Tech';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Share Tech Regular'), local('ShareTech-Regular'), url(https://fonts.gstatic.com/s/sharetech/v9/7cHtv4Uyi5K0OeZ7bohU8H0JnQ.ttf) format('truetype');
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -166,8 +187,8 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 2rem;
+  font-family: 'PT Mono', monospace;
 }
 header {
   width: 100%;
@@ -183,7 +204,7 @@ nav {
   width: 100%;
   border-bottom: 2px solid;
   border-image: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) 1;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'IM Fell Great Primer', serif;
   position: fixed;
   top: 0;
 }
@@ -207,165 +228,161 @@ nav a {
 }
 footer {
   width: 100%;
-  height: 300px;
-  background: #fff;
-  bottom: -300px;
+  height: 20rem;
+  background: #F0F0D0;
+  bottom: -20rem;
   position: fixed;
   z-index: -1;
 }
 footer h1 {
-  line-height: 300px;
+  line-height: 20rem;
 }
 .content {
   min-height: 1000px;
-  background: #F0F0D0;
+  background: #F6F7F8;
   position: relative;
   z-index: 1;
 }
 section {
-  margin: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex: 0 0 100%;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 section .banner {
-  margin-top: 10rem;
-  background: #F0F0D0;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 60%;
-}
-section .banner img {
-  width: 100%;
-}
-section .banner .container {
-  padding: 1rem 2rem;
-}
-section .banner .container h1 {
-  font-family: 'Great Vibes', cursive;
-}
-section .banner .container p {
-  font-size: 2rem;
-  font-family: 'PT Mono', monospace;
-}
-section .bannerhover {
-  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  margin-top: 40rem;
+  color: #F0F0D0;
+  text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+  width: 65%;
 }
 @media (max-width: 500px) {
   section .banner {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 80%;
-  }
-  section .banner img {
-    width: 100%;
-  }
-  section .banner .container {
-    padding: 1rem 2rem;
-  }
-  section .banner .container h1 {
-    font-family: 'Great Vibes', cursive;
-  }
-  section .banner .container p {
-    font-size: 2rem;
-    font-family: 'PT Mono', monospace;
-  }
-  section .bannerhover {
-    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+    width: 85%;
   }
 }
 @media (max-width: 800px) {
   section .banner {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 70%;
-  }
-  section .banner img {
-    width: 100%;
-  }
-  section .banner .container {
-    padding: 1rem 2rem;
-  }
-  section .banner .container h1 {
-    font-family: 'Great Vibes', cursive;
-  }
-  section .banner .container p {
-    font-size: 2rem;
-    font-family: 'PT Mono', monospace;
-  }
-  section .bannerhover {
-    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+    width: 75%;
   }
 }
 section .person {
   margin: 1rem;
-  background: #F6F7F8;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /*
+    &:hover {
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    }
+    */
 }
 section .person img {
-  width: 100%;
+  position: relative;
+  float: left;
+  max-width: 100%;
+  object-fit: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section .person .container {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem 1rem 0;
+  margin: 1rem 1rem 1rem 0;
 }
-section .person .container h1 {
-  font-family: 'Great Vibes', cursive;
+section .person .container h3 {
+  margin: 0.5rem 0;
+  font-size: 3rem;
+  font-family: 'IM Fell Great Primer', serif;
+}
+section .person .container h4 {
+  margin: 0.3rem 0;
+  font-size: 2.5rem;
+  font-family: 'Share Tech', sans-serif;
 }
 section .person .container p {
   font-size: 2rem;
   font-family: 'PT Mono', monospace;
 }
-section .personhover {
-  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
-}
 @media (max-width: 500px) {
   section .person {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /*
+    &:hover {
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    }
+    */
   }
   section .person img {
-    width: 100%;
+    position: relative;
+    float: left;
+    max-width: 100%;
+    object-fit: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   section .person .container {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 0;
   }
-  section .person .container h1 {
-    font-family: 'Great Vibes', cursive;
+  section .person .container h3 {
+    margin: 0.5rem 0;
+    font-size: 3rem;
+    font-family: 'IM Fell Great Primer', serif;
+  }
+  section .person .container h4 {
+    margin: 0.3rem 0;
+    font-size: 2.5rem;
+    font-family: 'Share Tech', sans-serif;
   }
   section .person .container p {
     font-size: 2rem;
     font-family: 'PT Mono', monospace;
-  }
-  section .personhover {
-    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
   }
 }
 @media (max-width: 800px) {
   section .person {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /*
+    &:hover {
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    }
+    */
   }
   section .person img {
-    width: 100%;
+    position: relative;
+    float: left;
+    max-width: 100%;
+    object-fit: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   section .person .container {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 0;
   }
-  section .person .container h1 {
-    font-family: 'Great Vibes', cursive;
+  section .person .container h3 {
+    margin: 0.5rem 0;
+    font-size: 3rem;
+    font-family: 'IM Fell Great Primer', serif;
+  }
+  section .person .container h4 {
+    margin: 0.3rem 0;
+    font-size: 2.5rem;
+    font-family: 'Share Tech', sans-serif;
   }
   section .person .container p {
     font-size: 2rem;
     font-family: 'PT Mono', monospace;
-  }
-  section .personhover {
-    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
   }
 }
 #scroll-animate {
@@ -391,7 +408,6 @@ section .personhover {
 }
 .wrapper-parallax {
   margin-top: 100%;
-  margin-bottom: 300px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 header,

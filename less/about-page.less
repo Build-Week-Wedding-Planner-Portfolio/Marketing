@@ -1,37 +1,41 @@
 .content
 {
   min-height: 1000px;
-  background: @cream;
+  background: @porcelain;
   position: relative;
   z-index: 1;
 }
 
 section {
-    margin: 2rem;
+    //margin: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex: 0 0 100%;
     margin: 0 auto;
     flex-wrap: wrap;
 
     .banner {
-        margin-top: 10rem;
-        background: @cream;
-        .card(60%);
+        margin-top: 40rem;
+        color: @cream;
+        text-shadow:
+            -1px -1px 0 @dk,  
+            1px -1px 0 @dk,
+            -1px 1px 0 @dk,
+            1px 1px 0 @dk;
+        width: 65%;
 
         @media @phone {
-            .card(80%);
+            width: 85%;
         }
 
         @media @tablet {
-            .card(70%);
+            width: 75%;
         }
     }
 
     .person {
         margin: 1rem;
-        background: @porcelain;
-        .card(20%);
+        .card(40%);
 
         @media @phone {
             .card(90%);
