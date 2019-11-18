@@ -1,0 +1,26 @@
+.card(@width) {
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: @width;
+
+    img {
+        width: 100%;
+    }
+
+    .container {
+        padding: 1rem 2rem;
+
+        h1 {
+            font-family: @written;
+        }
+
+        p {
+            font-size: 2rem;
+            font-family: @mono;
+        }
+      }
+
+    &hover {
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    }
+  }

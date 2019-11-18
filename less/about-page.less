@@ -1,0 +1,105 @@
+body {
+    //padding-top: 5rem;
+}
+
+.content
+{
+  min-height: 1000px;
+  background: @cream;
+  position: relative;
+  z-index: 1;
+}
+
+.content h1{
+    //line-height: 1000px;
+    color: #999;
+}
+
+section {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .banner {
+        margin-top: 10rem;
+        background: @cream;
+        .card(60%);
+
+        @media @phone {
+            .card(80%);
+        }
+
+        @media @tablet {
+            .card(70%);
+        }
+    }
+
+    .person {
+        margin: 1rem;
+        background: @porcelain;
+        .card(20%);
+
+        @media @phone {
+            .card(90%);
+        }
+
+        @media @tablet {
+            .card(40%);
+        }
+    }
+    //z-index: -1;
+    /*
+    .column {
+        flex-direction: column;
+        
+        .person-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding: 2rem;
+    
+            .person {
+                padding: 2rem;
+                margin: 0 auto;
+                border: 1px solid;
+                border-image: @thaGold 1;
+                font-family: @written;
+                background: @darker;
+                width: 75rem;
+                display: flex;
+                .person-photo {
+                    display: inline-block;
+                    position: relative;
+                    width: 140px;
+                    height: 140px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    z-index: -1;
+    
+                    img {
+                        width: auto;
+                        height: 100%;
+                        margin-left: -25px;
+                    }
+                }
+                
+                .person-name {
+                    
+                }
+        
+                .person-text {
+        
+                }
+        
+                .person-list {
+        
+                }
+                
+            }
+        }
+    }
+    */
+}
