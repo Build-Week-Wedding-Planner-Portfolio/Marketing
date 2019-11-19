@@ -613,8 +613,8 @@ img {
 }
 .homepage .home-content .highlight .img-highlight {
   height: 30rem;
-  background-image: url('https://via.placeholder.com/500');
-  background-position: top;
+  background-color: #efefef;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 1.5rem;
@@ -623,6 +623,19 @@ img {
   .homepage .home-content .highlight .img-highlight {
     margin-bottom: 0;
   }
+}
+.homepage .home-content .highlight .high1 {
+  background-position: top;
+  background-image: url('../img/moto.jpg');
+}
+.homepage .home-content .highlight .high2 {
+  background-image: url('../img/moto2.jpg');
+}
+.homepage .home-content .highlight .high3 {
+  background-image: url('../img/moto3.jpg');
+}
+.homepage .home-content .highlight .high4 {
+  background-image: url('../img/moto4.jpg');
 }
 .homepage .home-content .highlight .hide-mobile {
   display: none;
