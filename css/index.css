@@ -436,7 +436,7 @@ img {
   font-family: 'Playfair Display', serif;
 }
 .homepage h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .homepage h2 {
   font-size: 2.5rem;
@@ -456,6 +456,11 @@ img {
 .homepage a {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.homepage a:hover {
+  text-decoration: underline;
 }
 .homepage i {
   font-style: italic;
@@ -494,8 +499,63 @@ img {
 .homepage .navigation-wrapper {
   position: fixed;
   width: 100%;
-  height: 6rem;
+  height: 5.5rem;
   background-color: rgba(255, 255, 255, 0.65);
+}
+@media (min-width:500px) {
+  .homepage .navigation-wrapper {
+    height: 6rem;
+  }
+}
+.homepage .navigation-wrapper .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem 0;
+}
+@media (min-width:500px) {
+  .homepage .navigation-wrapper .navigation {
+    padding: 0.7rem 1.5rem 0;
+  }
+}
+.homepage .navigation-wrapper .navigation .links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.homepage .navigation-wrapper .navigation .links a {
+  flex: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.homepage .navigation-wrapper .navigation .links .button {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  text-decoration: none;
+  margin-left: 0.75rem;
+}
+.homepage .navigation-wrapper .navigation .links .button:hover {
+  color: black;
+  background-color: white;
+}
+@media (min-width:500px) {
+  .homepage .navigation-wrapper .navigation .links .button {
+    margin-left: 1.5rem;
+  }
+}
+.homepage .navigation-wrapper .navigation h1 {
+  display: inline-block;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.homepage .navigation-wrapper .navigation h1:hover {
+  opacity: 0.65;
 }
 .homepage .home-header {
   margin-bottom: 1.5rem;
@@ -596,6 +656,10 @@ img {
   border: 1px solid black;
   text-decoration: none;
 }
+.homepage .home-content .highlight .highlight-cta .button:hover {
+  color: white;
+  background-color: black;
+}
 .homepage .home-content .featured h2 {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -623,6 +687,10 @@ img {
   text-transform: uppercase;
   border: 1px solid black;
   text-decoration: none;
+}
+.homepage .home-content .featured .cards .wedding-card .button:hover {
+  color: black;
+  background-color: white;
 }
 .homepage .home-content .instagram {
   margin-bottom: 3rem;
