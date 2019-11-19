@@ -692,11 +692,12 @@ img {
   margin-bottom: 0.5rem;
 }
 .homepage .home-content .featured .cards .wedding-card p {
-  font-weight: 700;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 1.5rem;
 }
 .homepage .home-content .featured .cards .wedding-card i {
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
   font-size: 80%;
 }
 .homepage .home-content .featured .cards .wedding-card .button {
