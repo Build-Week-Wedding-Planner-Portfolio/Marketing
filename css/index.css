@@ -489,11 +489,11 @@ img {
   justify-content: unset;
   flex: none;
   flex-wrap: unset;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 @media (min-width:500px) {
   .homepage section {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 }
 .homepage .navigation-wrapper {
