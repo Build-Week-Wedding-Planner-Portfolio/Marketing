@@ -194,7 +194,7 @@ nav {
   width: 100%;
   border-bottom: 2px solid;
   border-image: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) 1;
-  font-family: 'IM Fell Great Primer', serif;
+  font-family: 'Open Sans', sans-serif;
   position: fixed;
   top: 0;
 }
@@ -284,7 +284,7 @@ section .person .container {
 section .person .container h3 {
   margin: 0.5rem 0;
   font-size: 3rem;
-  font-family: 'IM Fell Great Primer', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 section .person .container h4 {
   margin: 0.3rem 0;
@@ -293,11 +293,11 @@ section .person .container h4 {
 }
 section .person .container p {
   font-size: 2rem;
-  font-family: 'PT Mono', monospace;
+  font-family: 'Playfair Display', serif;
 }
 section .person .container p {
   font-size: 2rem;
-  font-family: 'PT Mono', monospace;
+  font-family: 'Playfair Display', serif;
 }
 @media (max-width: 500px) {
   section .person {
@@ -327,7 +327,7 @@ section .person .container p {
   section .person .container h3 {
     margin: 0.5rem 0;
     font-size: 3rem;
-    font-family: 'IM Fell Great Primer', serif;
+    font-family: 'Open Sans', sans-serif;
   }
   section .person .container h4 {
     margin: 0.3rem 0;
@@ -336,7 +336,7 @@ section .person .container p {
   }
   section .person .container p {
     font-size: 2rem;
-    font-family: 'PT Mono', monospace;
+    font-family: 'Playfair Display', serif;
   }
 }
 @media (max-width: 800px) {
@@ -367,7 +367,7 @@ section .person .container p {
   section .person .container h3 {
     margin: 0.5rem 0;
     font-size: 3rem;
-    font-family: 'IM Fell Great Primer', serif;
+    font-family: 'Open Sans', sans-serif;
   }
   section .person .container h4 {
     margin: 0.3rem 0;
@@ -376,7 +376,7 @@ section .person .container p {
   }
   section .person .container p {
     font-size: 2rem;
-    font-family: 'PT Mono', monospace;
+    font-family: 'Playfair Display', serif;
   }
 }
 #scroll-animate {
