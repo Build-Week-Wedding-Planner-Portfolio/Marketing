@@ -7,65 +7,54 @@
 
 img { width: 100%; }
 
-.flexbox(){
+.flexbox() {
   display: flex;
   flex-flow: row wrap;
 }
-
+.sans() {
+  font-family: @sans;
+}
+.serif() {
+  font-family: @serif;
+}
 // Homepage Styles
 .homepage {
 
   h1,h2,h3,h4,p,a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.25;
     margin-bottom: @sm;
   }
   h1,h2,h3,h4 {
-    font-weight: 600;
+    .serif();
+    // font-weight: 600;
   }
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  h4,p {
-    font-size: 1.5rem;
-  }
+  h1 {font-size: 3rem;}
+  h2 {font-size: 2.5rem;}
+  h3 {font-size: 2rem;}
+  h4,p,address {font-size: 1.5rem;}
+  p,address {.sans();}
   a {
+    .sans();
     font-size: 1rem;
   }
-  i {
-    font-style: italic;
-  }
+  i {font-style: italic;}
   @media @ipad {
-    h1 {
-      font-size: 3.5rem;
-    }
-    h2 {
-      font-size: 3rem;
-    }
-    h3 {
-      font-size: 2.5rem;
-    }
-    h4,p {
-      font-size: 2rem;
-    }
-    a {
-      font-size: 1.5rem;
-    }
+    h1 {font-size: 3.5rem;}
+    h2 {font-size: 3rem;}
+    h3 {font-size: 2.5rem;}
+    h4,p,address {font-size: 2rem;}
+    a {font-size: 1.5rem;}
   }
 
   section {
+    display: block;
+    justify-content: unset;
+    flex: none;
+    flex-wrap: unset;
     margin-bottom: @md;
     @media @ipad {
       margin-bottom: @lg;
     }
-  }
-  hr {
-    border: .5px solid black;
   }
 
   .btn(@color: black; @bg: white; @pd: 1rem 2.5rem) {
@@ -137,7 +126,7 @@ img { width: 100%; }
           align-self: center;
         }
 
-        h4 { letter-spacing: 1px; }
+        h4 { .sans(); letter-spacing: 1px; }
       }
       .img-highlight {
         height: 30rem;
@@ -209,6 +198,7 @@ img { width: 100%; }
     } // .featured
 
     .instagram {
+      margin-bottom: @lg;
 
       h2 {
         text-align: center;
@@ -228,15 +218,17 @@ img { width: 100%; }
         @media @laptop {
           grid-template-columns: repeat(6, 1fr);
         }
-        // .ig {
-        //   // border: 2px solid white;
-        // } // .ig
       } // .ig-wrapper
     } // .instagram
 
-    // .home-footer {
+    .home-footer {
+      border-top: 1px solid black;
+      padding: @md 0 @lg;
+      text-align: center;
 
-    // } // .home-footer
+      h3 {font-weight:600; margin-bottom:@md;}
+      address {margin-bottom:@md;}
+    } // .home-footer
   } // .home-content
 
 } // .homepage
